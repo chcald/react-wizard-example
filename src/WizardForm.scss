@@ -1,0 +1,21 @@
+.content-bottons {
+  display: flex;
+}
+
+.previous {
+  border-radius: 4px;
+  margin-top: 2%;
+  padding: 12px;
+  width: 45%;
+  margin-right: auto;
+}
+
+.next {
+  background-color: royalblue;
+  border-radius: 4px;
+  margin-top: 2%;
+  color: white;
+  padding: 12px;
+  width: 45%;
+  margin-left: auto;
+}

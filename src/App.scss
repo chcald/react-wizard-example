@@ -1,0 +1,32 @@
+
+
+.button {
+  background-color: #4ec5ff; // 39b0ea
+}
+
+.wizard {
+  background-color: #1adfdf;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  background-color: white;
+  padding: 3% 5% 5% 5%;
+}
+.flex-item {
+  text-align: left;
+  @media (min-width: 600px) {
+    padding: 1% 0 0 0;
+    width: 150vh;
+  }
+}
+
+
