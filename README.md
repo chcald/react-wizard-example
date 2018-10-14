@@ -9,3 +9,9 @@
   * npm run eject
 4. Add Redux
   * yarn add redux react-redux redux-form
+
+
+## Steps for run
+
+1. yarn install 
+2. yarn start
