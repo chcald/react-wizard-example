@@ -21,7 +21,7 @@ input, select, textarea, button{
   height: 15px;
   background-color: white;
   @media (min-width: 600px) {
-    height: 38px; //2.4rem;
+    height: 38px;
     font-size: 14px;
   }
 
@@ -29,10 +29,9 @@ input, select, textarea, button{
 
 input[type=checkbox] {
   margin: 5px;
-  transform: scale(1.8);
+  transform: scale(1.6);
   height: auto;
 }
-
 
 code {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
