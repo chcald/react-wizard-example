@@ -1,0 +1,47 @@
+@import "variables";
+
+
+.title-name {
+  margin: 0px;
+  font-size: 14px;
+}
+
+.content-form {
+  padding: 0 0 3% 0;
+ }
+
+.content-field {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.inputData {
+  width: 100%;
+  &__size-sm {
+    width: 50px;
+  }
+  &__size-md {
+    width: 150px;
+  }
+  &__size-bg {
+    width: 260px;
+  }
+  &--margin-left{
+    margin-left: 3.5%
+  }
+  &--margin-right{
+    margin-right: 3.5%
+  }
+}
+
+.inputData::placeholder {
+  color: $input-data-placeholder;
+}
+
+.inputData:focus { 
+  border: 0.2px solid $input-data-focus;
+ }
+
+ .text-error {
+  color: $input-data-error;
+ }

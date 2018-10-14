@@ -1,7 +1,7 @@
 import React from 'react';
 import { Field, reduxForm } from 'redux-form';
 import validate from './validate';
-import renderField from './renderField';
+import * as render from './renderField';
 
 
 const WizardFormFirstPage = props => {
@@ -9,19 +9,23 @@ const WizardFormFirstPage = props => {
   return (
     <form onSubmit={handleSubmit}>
       <Field
-        name="firstName"
+        name="name"
         type="text"
-        component={renderField}
-        label="First Name"
+        component={render.renderField}
+        placeholder="Ej.: Juan Carlos..."
+        label="Nombre completo"
+        className="inputData"
       />
       <Field
-        name="lastName"
+        name="cuit"
         type="text"
-        component={renderField}
-        label="Last Name"
+        component={render.renderField}
+        placeholder="Ej.: 23-45678901-2"
+        label="Nº de CUIT"
+        className="inputData"
       />
-      <div className="content-bottons">
-        <button type="submit" className="next">Next</button>
+      <div className="content-items">
+        <button type="submit" className="next">Siguiente</button>
       </div>
     </form>
   );

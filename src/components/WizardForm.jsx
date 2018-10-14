@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import WizardFormFirstPage from './WizardFormFirstPage';
 import WizardFormSecondPage from './WizardFormSecondPage';
 import WizardFormThirdPage from './WizardFormThirdPage';
+import ProgressBar from './ProgressBar'
 import './WizardForm.scss'
 
 class WizardForm extends Component {
@@ -27,17 +28,25 @@ class WizardForm extends Component {
     const { page } = this.state;
     return (
       <div>
-        {page === 1 && <WizardFormFirstPage onSubmit={this.nextPage} />}
-        {page === 2 &&
-          <WizardFormSecondPage
-            previousPage={this.previousPage}
-            onSubmit={this.nextPage}
-          />}
-        {page === 3 &&
-          <WizardFormThirdPage
-            previousPage={this.previousPage}
-            onSubmit={onSubmit}
-          />}
+        <div className="content-items">
+          <h1>Registro</h1>
+          <div className="progressbar-item">
+            <ProgressBar page={page}></ProgressBar>
+          </div>
+        </div>
+        <div className="flex-item">
+          {page === 1 && <WizardFormFirstPage onSubmit={this.nextPage} />}
+          {page === 2 &&
+            <WizardFormSecondPage
+              previousPage={this.previousPage}
+              onSubmit={this.nextPage}
+            />}
+          {page === 3 &&
+            <WizardFormThirdPage
+              previousPage={this.previousPage}
+              onSubmit={onSubmit}
+            />}
+        </div>
       </div>
     );
   }

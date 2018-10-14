@@ -1,0 +1,27 @@
+@import "variables";
+
+.previous {
+  border-radius: 4px;
+  margin-top: 2%;
+  margin-right: auto;
+  width: 45%;
+}
+
+.next {
+  background-color: $button-next-color;
+  border-radius: 4px;
+  margin-top: 2%;
+  color: $white-color;
+  margin-left: auto;
+  width: 45%;
+}
+
+.content-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progressbar-item {
+  width: 100%;
+  margin-bottom: 7%;
+}
